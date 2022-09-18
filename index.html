@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,60 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 </head>
+
 <body>
-	<h1 class="main-logo">Камень ножницы бумага</h1>
-	<div class="mein-text">Сделайте свой выбор</div>
-	<ul>
-		<li class="item">Камень</li>
-		<li class="item">Ножницы</li>
-		<li class="item">Бумага</li>
-	</ul>
-	<div class="alert" id="alert">
-		<p>Ваш выбор камень <br> Выбор компьютера камень <br> ничья</p>
-	</div>
+	<section class="rock-paper-scissors container">
+		<h1 class="main-logo">Камень ножницы бумага</h1>
+		<div class="mein-text">Сделайте свой выбор</div>
+		<ul>
+			<li class="item">Камень</li>
+			<li class="item">Ножницы</li>
+			<li class="item">Бумага</li>
+		</ul>
+		<div class="alert" id="alert">
+			<p>Ваш выбор камень <br> Выбор компьютера камень <br> ничья</p>
+		</div>
+	</section>
+	<section class="sleep-debt-calculator container">
+		<h1 class="sleep-debt-calculator__headline">Калькулятор сна</h1>
+		<p class="sleep-debt-calculator__question">Сколько часов вы спали на этой неделе?</p>
+		<form class="sleep-debt-calculator__form form" action="/" method="get" id="form">
+			<p class="form-item">
+				<label for="monday">В понедельник?</label>
+				<input id="monday" name="sleep-hours-monday" type="number">
+			</p>
+			<p class="form-item">
+				<label for="tuesday">Во вторник?</label>
+				<input id="tuesday" name="sleep-hours-tuesday" type="number">
+			</p>
+			<p class="form-item">
+				<label for="wedndesday">В среду?</label>
+				<input id="wedndesday" name="sleep-hours-wednesday" type="number">
+			</p>
+			<p class="form-item">
+				<label for="thursday">В четверг?</label>
+				<input id="thursday" name="sleep-hours-thursday" type="number">
+			</p>
+			<p class="form-item">
+				<label for="friday">В пятницу?</label>
+				<input id="friday" name="sleep-hours-friday" type="number">
+			</p>
+			<p class="form-item">
+				<label for="saturday">В субботу?</label>
+				<input id="saturday" name="sleep-hours-saturday" type="number">
+			</p>
+			<p class="form-item">
+				<label for="sunday">В воскресенье?</label>
+				<input id="sunday" name="sleep-hours-sunday" type="number">
+			</p>
+			<button class="button" type="submit" name="button">Посчитать</button>
+
+		</form>
+		<p id="calc-answ"></p>
+	</section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="game.js"></script>
+	<script src="sleep-calc.js"></script>
 </body>
+
 </html>

@@ -7,6 +7,16 @@
 	font-size: 20px;
 	color: black;
  }
+
+ .container {
+	border: solid green 2px;
+	margin: 30px auto;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+ }
  
  .item {
 	color: rgb(7, 52, 7);
@@ -28,4 +38,14 @@
 	padding: 5px;
 	align-items: flex-start;
 	margin: 15px;
+ }
+
+ .form-item {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+ }
+ 
+ #calc-answ {
+	display: none;
  }
