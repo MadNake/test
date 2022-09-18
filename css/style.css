@@ -11,4 +11,23 @@ body {
 .item {
   color: rgb(7, 52, 7);
   font-size: 24px;
+  cursor: pointer;
+}
+
+.item:hover {
+  color: red;
+}
+
+.alert {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.alert p {
+  border: solid black 2px;
+  padding: 5px;
+  align-items: flex-start;
+  margin: 15px;
 }
